@@ -64,13 +64,19 @@ margin-top:10px;
 
 .btn{
 background:#38bdf8;
-color:#000;
+color:#020617;
 padding:12px 25px;
 border-radius:8px;
 text-decoration:none;
-margin-top:20px;
 display:inline-block;
+margin-top:20px;
 font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#0ea5e9;
+transform:translateY(-2px);
 }
 
 .section{
