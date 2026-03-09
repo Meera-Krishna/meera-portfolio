@@ -69,10 +69,11 @@ padding:12px 25px;
 border-radius:8px;
 text-decoration:none;
 margin-top:20px;
+display:inline-block;
 }
 
 .section{
-padding:100px 10%;
+padding:70px 10%;
 opacity:0;
 transform:translateY(40px);
 transition:1s;
@@ -127,6 +128,7 @@ border-radius:10px;
 max-width:400px;
 margin:auto;
 text-align:center;
+box-shadow:0 0 25px rgba(56,189,248,0.3);
 }
 
 footer{
@@ -149,9 +151,12 @@ width:100%;
 margin-bottom:40px;
 }
 
-.contact-box{
-margin:0 auto;
+.contact-box a{
+color:#38bdf8;
+text-decoration:none;
+word-break:break-word;
 }
+
 #particles-js{
 position:fixed;
 width:100%;
