@@ -76,6 +76,7 @@ padding:100px 10%;
 opacity:0;
 transform:translateY(40px);
 transition:1s;
+text-align:center;
 }
 
 .skills-grid{
