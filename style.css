@@ -64,7 +64,7 @@ margin-top:10px;
 
 .btn{
 background:#38bdf8;
-color:white;
+color: #020617;;
 padding:12px 25px;
 border-radius:8px;
 text-decoration:none;
@@ -172,4 +172,7 @@ pointer-events:none;
 }
 .contact-box p{
 margin:10px 0;
+}
+.contact-box a.btn{
+color:#020617 !important;
 }
