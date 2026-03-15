@@ -1028,3 +1028,17 @@ input:focus, textarea:focus {
         text-align: center;
     }
 }
+.cert-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.cert-card{
+    height:220px;          /* same height for all cards */
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
