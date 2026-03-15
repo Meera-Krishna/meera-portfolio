@@ -1,173 +1,438 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Meera Krishna | Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meera Krishna | Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-
-<div id="particles-js"></div>
-
-<nav>
-<h2>Meera Krishna</h2>
-
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-</nav>
-
-
-
-<section class="hero">
-
-<img src="meera.jpg" class="profile">
-
-<h1>Hi, I'm Meera Krishna 👋</h1>
-
-<p class="typing"></p>
-
-<a href="#projects" class="btn">View My Work</a>
-
-</section>
-
-
-
-<section id="about" class="section">
-
-<h2>About Me</h2>
-
-<p>
-I am a Computer Science undergraduate at Lovely Professional University with a strong passion for software development, problem solving, and building impactful digital solutions. I enjoy transforming ideas into real-world applications that improve efficiency and enhance user experience.
-</p>
-
-<br>
-
-<p>
-My interests include software engineering, intelligent systems, and web development. I have experience working with technologies such as C++, Python, JavaScript, Java, Kotlin, and MySQL while developing projects that focus on solving practical problems.
-</p>
-
-<br>
-
-<p>
-I continuously work on improving my skills in data structures, algorithms, and modern development tools. My goal is to build scalable software systems and contribute to meaningful technology-driven solutions.
-</p>
-
-</section>
-
-
-
-<section id="skills" class="section">
-
-<h2>Skills</h2>
-
-<div class="skills-grid">
-
-<div class="skill-card">C++</div>
-<div class="skill-card">Python</div>
-<div class="skill-card">JavaScript</div>
-<div class="skill-card">Java</div>
-<div class="skill-card">Kotlin</div>
-<div class="skill-card">MySQL</div>
-
-</div>
-
-</section>
-
-
-
-<section id="projects" class="section">
-
-<h2>Projects</h2>
-
-<div class="project-grid">
-
-
-<div class="project-card">
-
-<h3>Personal Shopper Assistant</h3>
-
-<p>
-An AI-powered conversational shopping assistant designed to provide personalized product recommendations based on user preferences and shopping needs.
-</p>
-
-<br>
-
-<p>
-The system integrates the Gemini API to analyze user queries and generate intelligent product suggestions, comparisons, and guided purchase recommendations in real time. The application also enables category-based browsing and redirects users to relevant e-commerce platforms, making the shopping experience faster and more convenient.
-</p>
-
-</div>
-
-
-
-<div class="project-card">
-
-<h3>Personal Finance Tracker</h3>
-
-<p>
-A responsive web application designed to help users monitor their income, expenses, and monthly savings goals in a simple and organized manner.
-</p>
-
-<br>
-
-<p>
-The system allows users to categorize expenses, track financial transactions, and analyze spending behavior through structured data visualization. By providing clear insights into financial activities, the application helps users manage their personal finances more effectively.
-</p>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<section id="contact" class="section"
-style="padding:100px 0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;">
-
-<h2 style="margin-bottom:30px;">Contact</h2>
-
-<div class="contact-box">
-
-<p><strong>Email:</strong><br>
-<a href="mailto:meerapadmakumar229@gmail.com">meerapadmakumar229@gmail.com</a></p>
-
-<p><strong>GitHub:</strong><br>
-<a href="https://github.com/Meera-Krishna" target="_blank">github.com/Meera-Krishna</a></p>
-
-<p><strong>LinkedIn:</strong><br>
-<a href="https://linkedin.com/in/meera-krishna" target="_blank">linkedin.com/in/meera-krishna</a></p>
-
-<a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
-
-</div>
-
-</section>
-
-
-
-<footer>
-
-<p>© 2026 Meera Krishna</p>
-
-</footer>
-
-
-
-<script src="script.js"></script>
-
+<body data-theme="dark">
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container glass">
+            <a href="#home" class="logo">MK<span>.</span></a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#training">Summer Training</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="hamburger" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section-padding">
+            <div class="hero-content full-width-container">
+                <div class="hero-text reveal">
+                    <h1>Hi, I'm <span class="highlight">Meera Krishna</span></h1>
+                    <h2 class="subtitle"><span id="typewriter"></span><span class="cursor">|</span></h2>
+                    <p class="hero-desc">Passionate about building reliable, high-quality software systems and ensuring flawless user experiences through comprehensive testing.</p>
+                    <div class="hero-buttons">
+                        <a href="#resume" class="btn btn-primary">View Resume</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/meera-krishna" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Meera-Krishna" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image-container reveal-right">
+                    <div class="geometric-shape">
+                        <img src="meerakrishna.jpeg" alt="Meera Krishna" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding alt-bg">
+            <div class="container reveal">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <div class="about-grid glass-card">
+                    <div class="about-text">
+                        <h3>Professional Introduction</h3>
+                        <p>I am a highly motivated tech enthusiast with a background in Computer Science and Engineering. I have a strong passion for software development, quality assurance, and software testing.</p>
+                        <p>With an educational foundation (B.Tech) and hands-on experience, my career goal is to build reliable, high-quality software systems that solve real-world problems efficiently. I thrive on identifying deep-seated bugs, optimizing code, and bringing a user-centric approach to software engineering.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-text">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">8.96</span>
+                                <span class="stat-text">CGPA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="container reveal">
+                <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+                <div class="skills-grid">
+                    
+                    <!-- Programming -->
+                    <div class="skill-category glass-card">
+                        <h3><i class="fas fa-code"></i> Programming</h3>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <div class="skill-info"><span>C / C++</span><span>90%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-info"><span>Java</span><span>85%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-info"><span>Python</span><span>80%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-info"><span>HTML/CSS/JS</span><span>85%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-info"><span>DSA</span><span>80%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Software Testing -->
+                    <div class="skill-category glass-card">
+                        <h3><i class="fas fa-bug"></i> Software Testing</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Manual Testing</span>
+                            <span class="tag">Test Case Design</span>
+                            <span class="tag">Bug Tracking</span>
+                            <span class="tag">SDLC / STLC</span>
+                            <span class="tag">Selenium</span>
+                            <span class="tag">JUnit</span>
+                            <span class="tag">TestNG</span>
+                            <span class="tag">Postman</span>
+                            <span class="tag">Katalon Studio</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-category glass-card">
+                        <h3><i class="fas fa-tools"></i> Tools & Ecosystem</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Eclipse</span>
+                            <span class="tag">VS Code</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">GitHub</span>
+                            <span class="tag">Maven</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding alt-bg">
+            <div class="container reveal">
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <div class="project-grid">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card group">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" alt="CPU Scheduler" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Intelligent CPU Scheduler Simulator</h3>
+                            <p>A system that simulates different CPU scheduling algorithms to analyze performance and efficiency.</p>
+                            <div class="tech-stack">
+                                <span>C++</span>
+                                <span>Algorithms</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card group">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=800&auto=format&fit=crop" alt="Personal Shopper" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Meera-Krishna/" class="btn-icon"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Personal Shopper Assistant</h3>
+                            <p>A smart application designed to assist users in managing shopping tasks and contextual product recommendations.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Gemini API</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card group">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=800&auto=format&fit=crop" alt="Energy Management" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Smart Home Energy Management</h3>
+                            <p>An intelligent system designed to monitor and optimize home energy consumption efficiently.</p>
+                            <div class="tech-stack">
+                                <span>Java</span>
+                                <span>IoT Concepts</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card glass-card group">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="Finance Tracker" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Personal Finance Tracker</h3>
+                            <p>A web-based application that helps users manage, visualize, and track their personal finances.</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card glass-card group">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop" alt="Fraud Detection Testing" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Fraud Detection Risk Analytics Testing</h3>
+                            <p>Full manual and automation testing platform. Tasks included writing test scenarios, Selenium automation, API testing, and defect tracking.</p>
+                            <div class="tech-stack">
+                                <span>Selenium</span>
+                                <span>TestNG</span>
+                                <span>Postman</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications section-padding">
+            <div class="container reveal">
+                <h2 class="section-title"><span class="highlight">Certifications</span></h2>
+                <div class="cert-grid">
+                    <div class="cert-card glass-card">
+                        <i class="fas fa-certificate cert-icon"></i>
+                        <h4>Software Engineering & Agile</h4>
+                        <p>Infosys</p>
+                    </div>
+                    <div class="cert-card glass-card">
+                        <i class="fas fa-certificate cert-icon"></i>
+                        <h4>Privacy and Security in Social Media</h4>
+                        <p>NPTEL</p>
+                    </div>
+                    <div class="cert-card glass-card">
+                        <i class="fas fa-certificate cert-icon"></i>
+                        <h4>Responsive Web Design</h4>
+                        <p>freeCodeCamp</p>
+                    </div>
+                    <div class="cert-card glass-card">
+                        <i class="fas fa-certificate cert-icon"></i>
+                        <h4>Summer Training Certificate</h4>
+                        <p>Tech Institute</p>
+                    </div>
+                    <div class="cert-card glass-card">
+                        <i class="fas fa-certificate cert-icon"></i>
+                        <h4>DSA Training Certificate</h4>
+                        <p>Coding Platform</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements section-padding alt-bg">
+            <div class="container reveal">
+                <h2 class="section-title"><span class="highlight">Achievements</span></h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Gold Badge in C++</h3>
+                            <span class="date">HackerRank</span>
+                            <p>Awarded for solving advanced coding problems and demonstrating strong object-oriented programming skills.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Dean's Top 10%</h3>
+                            <span class="date">University</span>
+                            <p>Recognized among the top 10% of students for outstanding academic performance and extra-curricular activities.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Hackathons & Technical Events</h3>
+                            <span class="date">Various</span>
+                            <p>Actively participated and secured ranks in multiple university-level and national-level coding competitions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summer Training Section -->
+        <section id="training" class="training section-padding">
+            <div class="container reveal">
+                <h2 class="section-title">Summer <span class="highlight">Training</span></h2>
+                <div class="training-card glass-card">
+                    <div class="training-info">
+                        <h3>SDE Intern</h3>
+                        <h4 class="company">SkillCraft Technology</h4>
+                        <span class="duration">July 2025 - Aug 2025</span>
+                        <ul class="training-list">
+                            <li>Worked on full-stack software development following SDLC. Built CLI apps, GUI apps, and Web Services.</li>
+                            <li>Contributed to application design, debugging, and deployment.</li>
+                            <li>Gained hands-on experience in building and refining software solutions using best coding practices.</li>
+                        </ul>
+                        <div class="tech-stack mt-3">
+                            <span>Python</span>
+                            <span>Java</span>
+                            <span>C# .NET</span>
+                            <span>Git</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                    <div class="training-cert">
+                        <div class="cert-preview">
+                            <i class="fas fa-file-signature"></i>
+                            <p>Certificate of Completion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume section-padding alt-bg text-center">
+            <div class="container reveal">
+                <h2 class="section-title">My <span class="highlight">Resume</span></h2>
+                <p class="resume-text">Want to learn more about my experience and skills? Download my complete resume below.</p>
+                <a href="#" class="btn btn-primary btn-large">
+                    <i class="fas fa-download"></i> Download Resume (PDF)
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container reveal">
+                <h2 class="section-title">Get in <span class="highlight">Touch</span></h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info glass-card">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out for collaborations or just a friendly chat!</p>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:meerapadmakumar229@gmail.com">meerapadmakumar229@gmail.com</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://linkedin.com/in/meera-krishna" target="_blank">LinkedIn</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Meera-Krishna" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form glass-card">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Meera Krishna. All Rights Reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <a href="#home" class="back-to-top" aria-label="Back to top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
