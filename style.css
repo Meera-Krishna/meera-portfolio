@@ -1097,3 +1097,10 @@ input:focus, textarea:focus {
     font-size:14px;
     color:#4fc3f7;
 }
+.small-cert-icon{
+font-size:20px;
+margin-top:8px;
+display:block;
+text-align:center;
+color:#7dd3fc;
+}
