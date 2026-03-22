@@ -92,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const texts = [
         "Software Test Engineer",
         "Software Developer",
-        "QA Specialist",
         "Tech Enthusiast"
     ];
 
